@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header class='header'>
+        <div class='container'>
+            <div class='header__inner'>
+                <div class="header__left">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <a href="" class="header__logo">
+                        <img src="img/logo2.svg" alt="">
+                        <span>БИБОСС</span>
+                    </a>
+                    <div class="header__select">
+                        <select name="" id="">
+                            <option value="">Петропавловск-Камчатский</option>
+                            <option value="">Петропавловск-Камчатский 2</option>
+                            <option value="">Петропавловск-Камчатский 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <div class="header__button">
+                        <button> + Объявление</button>
+                    </div>
+                    <div class="header__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3414 3C13.1203 3.62556 13 4.29873 13 5H9.5C5.91015 5 3 7.91015 3 11.5C3 15.0899 5.91015 18 9.5 18H14.6059L14.81 18.0973C15.7629 18.5514 16.6894 19.1352 17.5895 19.8472C17.6663 18.9602 17.7928 18.1193 17.9692 17.3245L18.0504 16.9586L18.3521 16.7362C20.0055 15.5175 21 13.5926 21 11.5C21 11.2211 20.9824 10.9463 20.9483 10.6766C21.628 10.4434 22.2525 10.0915 22.7972 9.64582C22.93 10.2427 23 10.8632 23 11.5C23 14.1014 21.8221 16.5081 19.8485 18.1067C19.7291 18.7112 19.6402 19.3489 19.5821 20.0198C19.5483 20.4097 19.4009 20.7811 19.1581 21.088C18.4728 21.9543 17.215 22.101 16.3487 21.4158C15.6275 20.8453 14.8942 20.3738 14.1485 20H9.5C4.80558 20 1 16.1944 1 11.5C1 6.80558 4.80558 3 9.5 3H13.3414Z" fill="black" fill-opacity="0.2"/>
+                            <path d="M19 9C21.2091 9 23 7.20914 23 5C23 2.79086 21.2091 1 19 1C16.7909 1 15 2.79086 15 5C15 7.20914 16.7909 9 19 9Z" fill="#00B4F0"/>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.7581 19.4092C15.9165 19.7374 16.0053 20.1055 16.0053 20.4944C16.0053 21.8751 14.886 22.9944 13.5053 22.9944C12.6469 22.9944 11.8895 22.5617 11.4394 21.9026L10.7646 22.2922C8.9186 23.358 6.4979 22.3319 6.28959 20.3795C6.09057 18.7109 5.03745 16.1674 3.12329 12.8091C1.59162 10.1219 2.36346 6.7482 4.81889 4.97629C4.32184 4.56357 4.00532 3.94095 4.00532 3.2444C4.00532 2.00176 5.01268 0.994396 6.25532 0.994396C7.37922 0.994396 8.31065 1.81843 8.4784 2.89528C10.0778 2.24907 11.8375 2.34101 13.3252 3.0565C13.1178 3.66443 13.0053 4.31627 13.0053 4.9944C13.0053 5.05653 13.0063 5.11844 13.0081 5.18011C11.7746 4.32098 10.1064 4.19697 8.71949 4.99772L6.33599 6.37382C4.43031 7.47407 3.77119 9.90695 4.86085 11.8187C6.89675 15.3906 8.03728 18.1452 8.2769 20.155C8.32481 20.6038 9.11141 20.9373 9.7646 20.5601L19.2909 15.0601C19.9518 14.6785 20.0616 13.8291 19.6739 13.5618C18.8086 12.9144 17.8843 11.9323 16.8923 10.6117C17.5495 10.8591 18.2616 10.9944 19.0053 10.9944C19.2615 10.9944 19.5139 10.9783 19.7616 10.9472C20.1436 11.3551 20.5032 11.6853 20.8391 11.9368C22.4912 13.0714 22.149 15.7194 20.2909 16.7922L15.7581 19.4092Z" fill="black" fill-opacity="0.2"/>
+                            <path d="M19 9C21.2091 9 23 7.20914 23 5C23 2.79086 21.2091 1 19 1C16.7909 1 15 2.79086 15 5C15 7.20914 16.7909 9 19 9Z" fill="#00B4F0"/>
+                            </svg>
+                    </div>
+                    <div class="header__checkbox">
+                        <form class="header__from" action="#">
+                            <div class="header__form-input">
+                                <div class="header__input-checkbox">
+                                    <input type="checkbox" id="checked" name="checked">
+                                    <label for="checked"></label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="" class="header__avatarka">
+                        <img src="img/аватарка.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class='video'>
+        <div class='container'>
+            <div class='video__inner'>
+                <aside class="aside__left">
+                    <div class="video__left">
+                        <div class="video__search">
+                            <input type="text" placeholder="Поиск">
+                        </div>
+                        <div class="video__menu">
+                            <nav class="video__nav">
+                                <ul class="video__list">
+                                    <li class="video__item">
+                                        <a href="#">
+                                            <img src="img/left1.svg" alt="">
+                                            <span>Сообщество</span>
+                                        </a>
+                                    </li>
+                                    <li class="video__item">
+                                        <a href="#">
+                                            <img src="img/left2.svg" alt="">
+                                            <span>Коммерческая недвижимость</span>
+                                        </a>
+                                    </li>
+                                    <li class="video__item">
+                                        <a href="#">
+                                            <img src="img/left3.svg" alt="">
+                                            <span>Франшизы</span>
+                                        </a>
+                                    </li>
+                                    <li class="video__item">
+                                        <a href="#">
+                                            <img src="img/left4.svg" alt="">
+                                            <span>Готовый бизнес</span>
+                                        </a>
+                                    </li>
+                                    <li class="video__item">
+                                        <a href="#">
+                                            <img src="img/left5.svg" alt="">
+                                            <span>Товары и услуги</span>
+                                        </a>
+                                    </li>
+                                    <li class="video__item">
+                                        <a href="#">
+                                            <img src="img/left6.svg" alt="">
+                                            <span>Поставщики</span>
+                                        </a>
+                                    </li>
+                                    <li class="video__item">
+                                        <a href="#">
+                                            <img src="img/left7.svg" alt="">
+                                            <span>Инвестиции</span>
+                                        </a>
+                                    </li>
+                                    <li class="video__item">
+                                        <a href="#">
+                                            <img src="img/left8.svg" alt="">
+                                            <span>Бизнес-идеи</span>
+                                        </a>
+                                    </li>
+                                    <li class="video__item">
+                                        <a href="#">
+                                            <img src="img/left9.svg" alt="">
+                                            <span>Бизнес-планы</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </aside>
+                <main class="main__main-right">
+                    <div class="video__right">
+                        <div class="video__contest">
+                            <span class="video__contest-span">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30Z" fill="url(#paint0_linear_1_1727)"/>
+                                    <path d="M57.5 30C57.5 45.1878 45.1878 57.5 30 57.5C14.8122 57.5 2.5 45.1878 2.5 30C2.5 14.8122 14.8122 2.5 30 2.5C45.1878 2.5 57.5 14.8122 57.5 30Z" stroke="url(#paint1_linear_1_1727)"/>
+                                    <path d="M14.7692 23.8563C14.7692 21.3866 16.7713 19.3845 19.241 19.3845H35.8503C38.32 19.3845 40.3221 21.3866 40.3221 23.8563V35.9939C40.3221 38.4635 38.32 40.4656 35.8503 40.4656H19.241C16.7713 40.4656 14.7692 38.4635 14.7692 35.9939V23.8563Z" fill="url(#paint2_linear_1_1727)"/>
+                                    <path d="M32.3367 29.9251L40.3313 34.6278L40.3313 25.2224L32.3367 29.9251Z" fill="black" fill-opacity="0.4"/>
+                                    <path d="M32.3367 29.925L45.2572 37.5253C46.7477 38.4021 48.6267 37.3274 48.6267 35.5981L48.6267 24.252C48.6267 22.5227 46.7477 21.448 45.2572 22.3248L32.3367 29.925Z" fill="url(#paint3_linear_1_1727)" fill-opacity="0.7"/>
+                                    <path d="M32.3367 29.9249L25.15 34.0742C24.0853 34.6889 22.7544 33.9205 22.7544 32.6911L22.7544 27.1588C22.7544 25.9294 24.0853 25.161 25.15 25.7757L32.3367 29.9249Z" fill="white"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_1_1727" x1="14.8182" y1="1.54546" x2="44.4545" y2="61.4545" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFE86D"/>
+                                    <stop offset="1" stop-color="#F0C52B"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_1_1727" x1="2" y1="58" x2="55.5" y2="4.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F06A08"/>
+                                    <stop offset="1" stop-color="#FDB64B"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_1_1727" x1="16.7963" y1="40.4656" x2="40.3908" y2="21.2494" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EF6907"/>
+                                    <stop offset="1" stop-color="#FF9D43"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint3_linear_1_1727" x1="48.6267" y1="23.268" x2="37.5024" y2="40.3111" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EF6907"/>
+                                    <stop offset="1" stop-color="#FF9D43"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <div class="video__contest-text">
+                                <span>Конкурс БИБОСС</span>
+                                <strong>«Лучшее видео о франшизе»</strong>
+                            </div>
+                        </div>
+                        <h1 class="video__title">Видео о франшизе «Персональное решение»</h1>
+                        <div class="video__right-right">
+                            <div class="video__right-left">
+                                <div class="video__right-left-video">
+                                    <a href="">
+                                        <img src="img/poster.svg" alt="">
+                                        <img src="img/play.svg" alt="">
+                                        <span>Смотреть видео</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="video__right-rights">
+                                <div>
+                                    <h3 class="video__right-right-title">Голосование</h3>
+                                    <p class="video__right-right-text">Для того, чтобы проголосовать за видео, нужно сделать репост в любой из соцсетей:</p>
+                                </div>
+                                <div class="video__right-right-button">
+                                    <button class="video__right-right-btn">Голосовать FB</button>
+                                    <button class="video__right-right-btn2">Голосовать VK</button>
+                                    <button class="video__right-right-btn3">Голосовать OK</button>
+                                    <span class="video__span-voice">657 голосов</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution">
+                        <div class="solution__left">
+                            <div class="solution__left-img">
+                                <img src="img/solution.svg" alt="">
+                            </div>
+                            <div class="solution__left-block">
+                                <strong class="solution__left-strong">Персональное решение</strong>
+                                <span class="solution__left-span">Инвестиции 378 000 — 675 000 ₽</span>
+                                <a class="solution__left-link" href="#">Страница франшизы</a>
+                            </div>
+                        </div>
+                        <div class="solution__right">
+                            <div class="solution__right-block">
+                                <img src="img/chel.svg" alt="">
+                                <div>
+                                    <span class="solution__right-span">Дмитрий Варфоломеев</span>
+                                    <span class="solution__right-span">Представитель</span>
+                                </div>
+                            </div>
+                            <button class="solution__right-btn">Запросить финплан</button>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <div class="company__block">
+                            <div class="company__left">
+                                <h4 class="company__left-title">О компании</h4>
+                                <p class="company__left-text">Открой СВОЙ БИЗНЕС на услугах рабочей силы и ЗАРАБАТЫВАЙ от 200 000 рублей в месяц. За руку доведем до 200 000 руб/ мес личного дохода, даже если это твой первый бизнес! <span>- НАЧАТЬ ОЧЕНЬ ЛЕГКО</span> Без найма кучи
+                                    народу, закупок, оборудования и “закапывания” миллионов на годы. Первое время можно без офиса.</p>
+                                <a class="company__left-link" href="#">Страница франшизы</a>
+                            </div>
+                            <div class="company__right">
+                                <h4 class="company__right-title">Показатели</h4>
+                                <div class="company__right-block">
+                                    <div class="company__right-block-span">
+                                        <span class="company__right-span">1725</span>
+                                        <span class="company__right-span2">Год основания компании</span>
+                                    </div>
+                                    <div class="company__right-block-span">
+                                        <span class="company__right-span">1894</span>
+                                        <span class="company__right-span2">Год запуска франчайзинга</span>
+                                    </div>
+                                    <div class="company__right-block-span">
+                                        <span class="company__right-span">26 850</span>
+                                        <span class="company__right-span2">Франшизных предприятий</span>
+                                    </div>
+                                    <div class="company__right-block-span">
+                                        <span class="company__right-span">1</span>
+                                        <span class="company__right-span2">Собственных предприятий</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <h4 class="price__title">Стоимость франшизы и цена владения</h4>
+                            <div class="price__text-blocks">
+                                <div class="price__text-block">
+                                    <span class="price__span">Вступительный взнос</span>
+                                    <p class="price__text">150 000 — 400 000 ₽</p>
+                                </div>
+                                <div class="price__text-block">
+                                    <span class="price__span">Роялти</span>
+                                    <p class="price__text">5% от оборота в месяц, но не более 10 000 руб. При этом минимальная гарантированная сумма, подлежащая переводу Дилером, составляет 5 000 рублей (для городов менее 250 тысяч жителей 3 000 руб., для городов менее 100
+                                        тысяч согласовывается)</p>
+                                </div>
+                                <div class="price__text-block">
+                                    <span class="price__span">Иные текущие платежи</span>
+                                    <p class="price__text">Аттестация и повышение квалификации тренеров 2 000 — 5 000 рублей в год</p>
+                                </div>
+                            </div>
+                            <div class="price__button">
+                                <img class="price__button-img" src="img/price__btn.svg" alt="">
+                                <a class="price__button-link" href="#">Запросить финансовый план</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fraeshiza">
+                        <div class="fraeshiza__left">
+                            <h3 class="fraeshiza__left-title">Описание франшизы</h3>
+                            <div class="fraeshiza__left-block-text">
+                                <h4 class="fraeshiza__title">ЧЕМ ТЫ БУДЕШЬ ЗАНИМАТЬСЯ? И КАК БУДЕШЬ ЗАРАБАТЫВАТЬ НА УСЛУГАХ РАБОЧЕЙ СИЛЫ?</h4>
+                                <p class="fraeshiza__text"> Ты будешь предоставлять рабочую силу на склады, фабрики, заводы, производства со сдельной и почасовой оплатой. Кто будет работать у тебя?</p>
+                                <li class="fraeshiza__item">
+                                    <a href="#">• Рабочие, ищущие дополнительный заработок</a>
+                                </li>
+                                <li class="fraeshiza__item">
+                                    <a href="#">• Временно безработные люди</a>
+                                </li>
+                            </div>
+                            <div class="fraeshiza__link-block">
+                                <a class="fraeshiza__link" href="#">Страница франшизы</a>
+                                <img src="img/next.svg" alt="">
+                            </div>
+                            <div class="fraeshiza__block-img">
+                                <img src="img/fraeshiza.svg" alt="">
+                                <img src="img/fraeshiza2.svg" alt="">
+                                <img src="img/fraeshiza3.svg" alt="">
+                                <img src="img/fraeshiza4.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="fraeshiza__right"></div>
+                    </div>
+                    <div class="representative">
+                        <div class="representative__inner-inner">
+                            <div class="representative__left-inner">
+                                <div class="representative__block-span">
+                                    <img src="img/dmitr.svg" alt="">
+                                    <div>
+                                        <span>Дмитрий Варфоломеев</span>
+                                        <span>Представитель</span>
+                                    </div>
+                                </div>
+                                <div class="representative__inner">
+                                    <div class="representative__inner-left">
+                                        <input class="representative__inner-left-input" type="text" placeholder="Ваше имя">
+                                        <input class="representative__inner-left-input" type="text" placeholder="E-mail">
+                                        <input class="representative__inner-left-input" type="text" placeholder="Номер телефона">
+                                        <textarea></textarea>
+                                        <div class="representative__inner-left-checked">
+                                            <div>
+                                                <input class="representative__check" type="checkbox">
+                                                <span>я не робот</span>
+                                            </div>
+                                            <p>Проверка безопасности</p>
+                                        </div>
+                                        <button class="representative__inner-left-btn">Отправить сообщение</button>
+                                        <div class="representative__inner-left-security">
+                                            <img src="img/representative4.svg" alt="">
+                                            <p class="representative__inner-left-text">Ваши данные в полной безопасности. Они видны только автору объявления.</p>
+                                        </div>
+                                    </div>
+                                    <div class="representative__inner-right">
+                                        <h5 class="representative__inner-right-title">Что можно обсудить с представителем:</h5>
+                                        <div class="representative__inner-right-block">
+                                            <img src="img/representative5.svg" alt="">
+                                            <p class="representative__inner-right-text">Узнать есть ли возможность открытия в вашем городе</p>
+                                        </div>
+                                        <div class="representative__inner-right-block">
+                                            <img src="img/representative5.svg" alt="">
+                                            <p class="representative__inner-right-text">Попросить контакты уже действующих франчайзи</p>
+                                        </div>
+                                        <div class="representative__inner-right-block">
+                                            <img src="img/representative5.svg" alt="">
+                                            <p class="representative__inner-right-text">Получить шаблоны договоров для ознакомления</p>
+                                        </div>
+                                        <div class="representative__inner-right-block">
+                                            <img src="img/representative5.svg" alt="">
+                                            <p class="representative__inner-right-text">Ознакомиться с финансовым планом и этапами запуска бизнеса</p>
+                                        </div>
+                                        <div class="representative__inner-right-block">
+                                            <img src="img/representative5.svg" alt="">
+                                            <p class="representative__inner-right-text">Узнать какие гарантии может дать франшиза</p>
+                                        </div>
+                                        <div class="representative__inner-right-block">
+                                            <img src="img/representative5.svg" alt="">
+                                            <p class="representative__inner-right-text">Обсудить возможность скидки</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="participants">
+                        <div class="participants__inner">
+                            <h3 class='participants__inner-title'>Другие участники конкурса</h3>
+                            <div class="participants__inner-video">
+                                <div class="participants__block">
+                                    <a href="">
+                                        <img src="img/participants.svg" alt="">
+                                        <img src="img/participants11.svg" alt="">
+                                        <img src="img/participants-play.svg" alt="">
+                                    </a>
+                                    <strong class="participants__block-strong">Borodach</strong>
+                                    <span class="participants__block-span">Мужские парикмехерские</span>
+                                    <div class="participants__block-block">
+                                        <strong class="participants__block-strong2">Смотреть и голосовать</strong>
+                                        <img src="img/next.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="participants__block">
+                                    <a href="">
+                                        <img src="img/participants2.svg" alt="">
+                                        <img src="img/participants22.svg" alt="">
+                                        <img src="img/participants-play.svg" alt="">
+                                    </a>
+                                    <strong class="participants__block-strong">Персональное решение</strong>
+                                    <span class="participants__block-span">Сеть услуг рабочей силы</span>
+                                    <div class="participants__block-block">
+                                        <strong class="participants__block-strong2">Смотреть и голосовать</strong>
+                                        <img src="img/next.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="participants__block">
+                                    <a href="">
+                                        <img src="img/participants3.svg" alt="">
+                                        <img src="img/participants33.svg" alt="">
+                                        <img src="img/participants-play.svg" alt="">
+                                    </a>
+                                    <strong class="participants__block-strong">TOY.RU</strong>
+                                    <span class="participants__block-span">Магазин детских игрушек</span>
+                                    <div class="participants__block-block">
+                                        <strong class="participants__block-strong2">Смотреть и голосовать</strong>
+                                        <img src="img/next.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="">
+                                <span class="participants__link">Все участники конкурса</span>
+                            </a>
+                        </div>
+                    </div>
+                    <footer class="footer">
+                        <div class="footer__logo">
+                            <span class="footer__logo-span">
+                               <img src="img/logo2.svg" alt="">
+                               <span class="footer__logo-span3">БИБОСС</span>
+                            </span>
+                            <div class="footer__logo-img">
+                                <img src="img/footer.svg" alt="">
+                                <span class="footer__logo-span2">Управление</span>
+                            </div>
+                        </div>
+                        <div class="footer__inner">
+                            <div class="footer__inner-block">
+                                <h5 class=" footer__inner-block-title">РАЗДЕЛЫ</h5>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer2.svg " alt=" ">
+                                    <span class="footer__span ">Сообщество</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections">
+                                    <img src="IMG/footer3.svg" alt=" ">
+                                    <span class="footer__span">Коммерческая недвижимость</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer4.svg " alt=" ">
+                                    <span class="footer__span ">Франшизы</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer5.svg " alt=" ">
+                                    <span class="footer__span ">Готовый бизнес</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer6.svg " alt=" ">
+                                    <span class="footer__span ">Товары для бизнеса</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer7.svg " alt=" ">
+                                    <span class="footer__span ">Инвестпроекты</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer8.svg " alt=" ">
+                                    <span class="footer__span ">Бизнес-идеи</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer9.svg " alt=" ">
+                                    <span class="footer__span ">Бизнес-планы</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer10.svg " alt=" ">
+                                    <span class="footer__span ">Заявки</span>
+                                </a>
+                            </div>
+                            <div class="footer__inner-block2 ">
+                                <h5 class="footer__inner-block-title ">ПРОЕКТЫ</h5>
+                                <div>
+                                    <a href=" " class="footer__span ">Бизнес-журнал</a>
+                                    <a href=" " class="footer__span ">Календарь мероприятий</a>
+                                    <a href=" " class="footer__span ">Рейтинг франшиз</a>
+                                    <a href=" " class="footer__span ">Франчайзинговая прмия</a>
+                                    <a href=" " class="footer__span ">Мисс франчайзинг 2019</a>
+                                    <a href=" " class="footer__span ">Рейтинг торговых центров</a>
+                                    <a href=" " class="footer__span ">Как начать бизнес</a>
+                                    <a href=" " class="footer__span ">Карта МСП</a>
+                                    <a href=" " class="footer__span ">Мобильные приложения</a>
+                                </div>
+                            </div>
+                            <div class="footer__inner-block3 ">
+                                <h5 class="footer__inner-block-title ">БИБОСС</h5>
+                                <div>
+                                    <a href=" " class="footer__span ">О портале</a>
+                                    <a href=" " class="footer__span ">Статьи пользователей</a>
+                                    <a href=" " class="footer__span ">Отзывы о нас</a>
+                                    <a href=" " class="footer__span ">Рекламные услуги</a>
+                                    <a href=" " class="footer__span ">Работа у нас</a>
+                                    <a href=" " class="footer__span ">Книги</a>
+                                    <a href=" " class="footer__span ">Контакты</a>
+                                    <a href=" " class="footer__span ">Служба поддержки</a>
+                                </div>
+                            </div>
+                            <div class="footer__inner-block4 ">
+                                <h5 class="footer__inner-block-title ">СОЦСЕТИ</h5>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer-f.svg " alt=" ">
+                                    <span class="footer__span ">Facebook</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer-vk.svg " alt=" ">
+                                    <span class="footer__span ">Вконтакте</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer-tg.svg " alt=" ">
+                                    <span class="footer__span ">Телеграм</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer-instagram.svg " alt=" ">
+                                    <span class="footer__span ">Instagram</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer-yotube.svg " alt=" ">
+                                    <span class="footer__span ">Youtube</span>
+                                </a>
+                                <a href=" " class="footer__inner-block-sections ">
+                                    <img src="IMG/footer-ok.svg " alt=" ">
+                                    <span class="footer__span ">Одноклассники</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__bottom ">
+                            <div class="footer__bottom-left ">
+                                <span class="footer__bottom-left-span ">ДРУГИЕ СТРАНЫ</span>
+                                <div class="footer__bottom-Ukraine ">
+                                    <img src="img/украина.svg " alt=" ">
+                                    <span>Украина</span>
+                                </div>
+                                <div class="footer__bottom-Kazakhstan ">
+                                    <img src="img/казахастан.svg " alt=" ">
+                                    <span>Казахстан</span>
+                                </div>
+                                <div class="footer__bottom-Belarus ">
+                                    <img src="img/беларусь.svg " alt=" ">
+                                    <span>Белоруссия</span>
+                                </div>
+                            </div>
+                            <div class="footer__bottom-right ">
+                                <span>© БИБОСС 2006-2018</span>
+                                <img src="img/image.svg " alt=" ">
+                            </div>
+                        </div>
+                    </footer>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/jquery-1.11.3.min.js "></script>
+    <script src="js/jquery.nice-select.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
